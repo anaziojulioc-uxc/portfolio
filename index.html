@@ -235,12 +235,13 @@
     <!-- ****  SECÇÃO DE CONTACTO **** -->
     <section class="contacto" id="contacto">
         <h2 class="heading">Contacte <span>me</span></h2>
-        <form action="https://formsubmit.co/anaziojulioc@gmail.com" method="POST" id="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                <input type="hidden" name="access_key" value="50a3f0d1-7659-45af-9210-5cad75355776">
             <div class="input-box">
                 <input type="text" name="name" placeholder="Nome" required>
                 <input type="email" name="email" placeholder="Endereço eletrônico" required>
-                <input type="text" name="Numero" placeholder="Contacto" required>
-                <input type="text" name="text" placeholder="Assunto" required>
+                <input type="text" name="numero" placeholder="Contacto" required>
+                <input type="text" name="assunto" placeholder="Assunto" required>
             </div>
             <textarea name="mensagem" required cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
             <input type="submit" value="Enviar Mensagem" class="btn">
