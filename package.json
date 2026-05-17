@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-anazio",
+  "version": "1.0.0",
+  "description": "Portfólio profissional de Anázio Conjo - Técnico Informático, Programador Front-End e Designer Gráfico",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -c-1 -o",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "designer",
+    "técnico-informático"
+  ],
+  "author": "Anázio Conjo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnazioConjo/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnazioConjo/portfolio/issues"
+  },
+  "homepage": "https://anaziconjo.github.io/portfolio"
+}
