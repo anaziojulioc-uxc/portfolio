@@ -118,7 +118,7 @@ new TypeIt("#typeit", {
 // Formulário de contato
 const form = document.getElementById('contact-form');
 const message = document.getElementById('form-message');
-if (form) {
+if (form && message) {
     form.onsubmit = function(e) {
         message.textContent = 'Enviando...';
         setTimeout(() => {
