@@ -819,19 +819,19 @@ main.row {
 /* Timeline Neon Alternada */
 .timeline-vertical {
   position: relative;
-  max-width: 1200px; /* aumente aqui para caber os cards largos */
+  max-width: 1000px; /* Reduzida para evitar cruzamento */
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 4rem 2rem; /* Adicionado padding horizontal */
 }
 
 /* Responsivo para telas pequenas */
 @media (max-width: 900px) {
   .timeline-vertical {
     max-width: 98vw;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
   .timeline-card.neon {
-    max-width: 96vw;
+    max-width: 90vw;
     min-width: 0;
     padding: 1.2rem 1rem;
   }
@@ -886,9 +886,9 @@ main.row {
   border: 2.5px solid #ffbd00;
   border-radius: 1.5rem;
   box-shadow: 0 0 18px #ffbd00, 0 0 40px #181818 inset;
-  padding: 1.5rem 3.5rem 1.2rem 3.5rem; /* menos altura, mais largura */
-  min-width: 400px;
-  max-width: 540px; /* aumente para deixar mais largo */
+  padding: 1.5rem 2rem 1.2rem 2rem; /* Reduzido o padding horizontal */
+  min-width: 300px;
+  max-width: 420px; /* Reduzido de 540px */
   color: #fff;
   position: relative;
   z-index: 2;
@@ -972,10 +972,10 @@ main.row {
 @media (max-width: 900px) {
   .timeline-vertical {
     max-width: 98vw;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
   .timeline-card.neon {
-    max-width: 96vw;
+    max-width: 90vw;
     min-width: 0;
     padding: 1.2rem 1rem;
   }
@@ -998,33 +998,4 @@ main.row {
   .timeline-vertical::before {
     display: none !important;
   }
-
-  /* remove os pontos centrais da timeline */
-  .timeline-row::before {
-    display: none !important;
-  }
-
-  /* força exibição linear dos itens e cancela posicionamentos left/right */
-  .timeline-row,
-  .timeline-row.left,
-  .timeline-row.right {
-    justify-content: flex-start !important;
-    animation: none !important;
-    transform: none !important;
-    opacity: 1 !important;
-  }
-
-  /* mantém o estilo dos cards, mas faz eles ocuparem a largura disponível */
-  .timeline-card,
-  .timeline-card.neon {
-    margin: 0 0 2rem 0 !important;
-    max-width: 98vw !important;
-    min-width: 0 !important;
-    width: 100% !important;
-    padding: 1.2rem 1.2rem !important; /* ajuste para telas pequenas */
-  }
 }
-
-
-
-
